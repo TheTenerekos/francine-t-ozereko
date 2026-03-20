@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francine T. Ozereko — Ceramicist</title>
+  <meta name="description" content="Francine T. Ozereko — ceramicist and studio potter. Sgraffito porcelain, birds, sky studies. Western Massachusetts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <div class="site-nav">
+    <div class="nav-top">
+      <div class="nav-name" id="home-link">Francine T. Ozereko</div>
+      <div class="nav-links">
+        <div class="nav-btn" id="work-btn">Work</div>
+        <div class="nav-btn nav-btn--sky" id="sky-btn">Sky Journal</div>
+        <div class="nav-btn" id="about-btn">About</div>
+        <div class="nav-btn" id="contact-btn">Contact</div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawer-close">✕</button>
+    <nav class="drawer-nav">
+
+      <div class="drawer-section">
+        <div class="drawer-heading" id="mob-work-heading">
+          <span>Work</span><span class="drawer-arrow">+</span>
+        </div>
+        <div class="drawer-sub" id="mob-work-sub">
+          <div class="drawer-sub-group">
+            <div class="drawer-sub-label">Ceramics</div>
+            <div class="drawer-sub-item" data-cat="mugs">Mugs &amp; Cups</div>
+            <div class="drawer-sub-item" data-cat="bowls">Bowls &amp; Plates</div>
+            <div class="drawer-sub-item" data-cat="birds">Birds &amp; Sculptural</div>
+          </div>
+          <div class="drawer-sub-group">
+            <div class="drawer-sub-label">With Frank</div>
+            <div class="drawer-sub-item" data-cat="collaborative">Collaborative</div>
+          </div>
+          <div class="drawer-sub-item drawer-sub-item--all" data-cat="all">All Work</div>
+        </div>
+      </div>
+
+      <div class="drawer-section drawer-section--sky">
+        <div class="drawer-heading drawer-heading--sky" id="mob-sky-direct">
+          <span>Sky Journal</span>
+        </div>
+      </div>
+
+      <div class="drawer-section">
+        <div class="drawer-heading drawer-heading--plain" id="mob-about-direct">
+          <span>About</span>
+        </div>
+      </div>
+
+      <div class="drawer-section">
+        <div class="drawer-heading drawer-heading--plain" id="mob-contact-direct">
+          <span>Contact</span>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- ═══════════════════════════════
+       HOME PAGE
+  ═══════════════════════════════ -->
+  <div id="page-home" class="page active">
+    <div class="home-grid" id="home-grid">
+      <!-- populated by JS -->
+    </div>
+    <div class="rbg-bar">
+      <p class="rbg-bar__text">Justice Ruth Bader Ginsburg commissioned one of these mugs and wrote to say so — on Supreme Court letterhead.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       WORK PAGE
+  ═══════════════════════════════ -->
+  <div id="page-work" class="page">
+    <div class="work-layout">
+
+      <!-- LEFT NAV -->
+      <aside class="work-sidebar" id="work-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-heading" id="sidebar-ceramics-heading">
+            Ceramics <span class="sidebar-arrow">+</span>
+          </div>
+          <div class="sidebar-items" id="sidebar-ceramics-items">
+            <div class="sidebar-item" data-cat="all">All</div>
+            <div class="sidebar-item" data-cat="mugs">Mugs &amp; Cups</div>
+            <div class="sidebar-item" data-cat="bowls">Bowls &amp; Plates</div>
+            <div class="sidebar-item" data-cat="birds">Birds &amp; Sculptural</div>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-heading" id="sidebar-collab-heading">
+            With Frank <span class="sidebar-arrow">+</span>
+          </div>
+          <div class="sidebar-items" id="sidebar-collab-items">
+            <div class="sidebar-item" data-cat="collaborative">Collaborative</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- GRID -->
+      <div class="work-grid" id="work-grid">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SKY JOURNAL PAGE
+  ═══════════════════════════════ -->
+  <div id="page-sky" class="page">
+    <div class="sky-layout">
+      <div class="sky-intro">
+        <h1 class="sky-title">Sky Journal</h1>
+        <p class="sky-subtitle">A daily practice — begun in 2010, ongoing.</p>
+        <p class="sky-desc">Every morning, Francine looks up. These are the records of what she found there.</p>
+        <p class="sky-inquire">To inquire about sky journal works, <a href="mailto:francine@francinetozereko.com">write to Francine</a>.</p>
+      </div>
+      <div class="sky-grid" id="sky-grid">
+        <!-- populated by JS -->
+      </div>
+      <div class="sky-load-wrap">
+        <button class="sky-load-btn" id="sky-load-more">Load more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       ABOUT PAGE
+  ═══════════════════════════════ -->
+  <div id="page-about" class="page">
+    <div class="about-layout">
+      <div class="about-text">
+        <h1 class="about-name">Francine T. Ozereko</h1>
+        <div class="about-body">
+          <p>Francine T. Ozereko has been a ceramicist and studio potter for more than four decades, working from a shared studio in Pelham, Massachusetts. Her practice centers on sgraffito porcelain — a technique of drawing by subtraction, carving through layers of slip to reveal the clay beneath — and on a vocabulary of birds, sky, and the domestic world that has accumulated over a lifetime of looking.</p>
+
+          <p>Her functional work — mugs, bowls, plates, vessels — is made to be used. She has said that coffee drunk from the right cup tastes different, and she means it.</p>
+
+          <p>The Sky Journal is a daily practice she began in 2010, painting the sky outside her studio window each morning before work. The series now spans thousands of entries. Her father, John Trearchis, flew planes in the Second World War and took his children up with him when they were small. Whether those early flights and the sky journal are connected is something she leaves others to decide.</p>
+
+          <p>Her sgraffito birds — wheel-thrown, carved, sometimes perched on wire legs over driftwood — have become her most recognizable sculptural form. Birds fly through everything she makes.</p>
+
+          <p>In 2018, Justice Ruth Bader Ginsburg wrote to Francine on Supreme Court letterhead. "I love the cup you created for me," she wrote. "It will bring a smile every time I use it." The Justice's granddaughter can be seen carrying one of Francine's mugs in the Netflix documentary <em>RBG</em> (2018). Francine has the letter.</p>
+
+          <p>She holds an MFA from the University of Massachusetts Amherst and a BFA from the Massachusetts College of Art. She was a resident at the Ucross Foundation in Wyoming and has exhibited widely across New England and beyond. She and her husband, the printmaker and ceramicist Frank Ozereko, have shared a studio for over thirty-five years.</p>
+        </div>
+
+        <div class="about-credentials">
+          <div class="about-cred-section">
+            <div class="about-cred-label">Education</div>
+            <div class="about-cred-item">MFA, University of Massachusetts Amherst</div>
+            <div class="about-cred-item">BFA, Massachusetts College of Art</div>
+          </div>
+          <div class="about-cred-section">
+            <div class="about-cred-label">Residencies &amp; Recognition</div>
+            <div class="about-cred-item">Ucross Foundation, Clearmont, Wyoming</div>
+            <div class="about-cred-item">Marks Project</div>
+            <div class="about-cred-item">Art New England</div>
+          </div>
+          <div class="about-cred-section">
+            <div class="about-cred-label">Selected Press</div>
+            <div class="about-cred-item">Boston Sunday Globe, February 2010 — "On the Line: Frank and Francine Ozereko"</div>
+            <div class="about-cred-item">Art New England</div>
+            <div class="about-cred-item">Preview Magazine</div>
+          </div>
+        </div>
+
+        <div class="about-rbg">
+          <div class="about-rbg-label">A Note on Justice Ginsburg</div>
+          <p>On July 27, 2018, Justice Ruth Bader Ginsburg wrote to Francine T. Ozereko on official Supreme Court Chambers letterhead. She thanked Francine for "the addition to my Francine T. Ozereko collection" and wrote: "I love the cup you created for me. It will bring a smile every time I use it." The letter is signed in her hand. The Justice's granddaughter carries one of Francine's mugs in the Netflix documentary <em>RBG</em> (2018, dir. Betsy West &amp; Julie Cohen). Francine holds the original letter.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       CONTACT PAGE
+  ═══════════════════════════════ -->
+  <div id="page-contact" class="page">
+    <div class="contact-layout">
+      <h1 class="contact-title">Contact</h1>
+      <div class="contact-body">
+        <p>For inquiries about work, commissions, or the sky journal, write to Francine directly.</p>
+        <a href="mailto:francine@francinetozereko.com" class="contact-email">francine@francinetozereko.com</a>
+
+        <div class="contact-commissions">
+          <div class="contact-comm-label">Commissions</div>
+          <p>Francine accepts commissions for functional ceramics, bird sculptures, and architectural ceramic work. Past commissions include large-scale bird installations and ceramic elements built into architecture. Please write with a brief description of what you have in mind — timeline, scale, and context — and she will respond.</p>
+        </div>
+
+        <div class="contact-studio">
+          <div class="contact-comm-label">Studio</div>
+          <p>Ozereko Studios<br />Pelham, Massachusetts</p>
+          <p class="contact-studio-note">The studio holds an open studio event annually. Sign up below to be notified.</p>
+        </div>
+
+        <div class="contact-newsletter">
+          <div class="contact-comm-label">Studio Letter</div>
+          <p>Frank and Francine send an occasional letter — new work, open studio dates, what's happening in the studio. No frequency promises.</p>
+          <a href="https://ozereko.com" class="contact-newsletter-link" target="_blank">Sign up at ozereko.com →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       LIGHTBOX
+  ═══════════════════════════════ -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-panel">
+      <button class="lightbox-close" id="lightbox-close">✕</button>
+      <div class="lightbox-img-wrap">
+        <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      </div>
+      <div class="lightbox-info">
+        <div class="lightbox-title" id="lightbox-title"></div>
+        <div class="lightbox-meta" id="lightbox-meta"></div>
+        <div class="lightbox-price" id="lightbox-price"></div>
+        <div class="lightbox-actions" id="lightbox-actions"></div>
+      </div>
+    </div>
+    <button class="lightbox-prev" id="lightbox-prev">&#8592;</button>
+    <button class="lightbox-next" id="lightbox-next">&#8594;</button>
+  </div>
+
+  <script src="gallery-data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
