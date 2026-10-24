@@ -5,20 +5,20 @@
    ═══════════════════════════════════════════ */
 
 :root {
-  --bg:          #f5f0e8;
-  --ink:         #1a1714;
-  --ink-mid:     #4a4540;
-  --ink-light:   #9a8f80;
-  --accent:      #7a8fa6;       /* Francine's slate — vs Frank's terracotta */
-  --accent-warm: #5c6f82;
-  --accent-pale: #e8edf2;
-  --border:      #ddd5c5;
+  --bg:          #ffffff;
+  --ink:         #0a0a0a;
+  --ink-mid:     #3a3a3a;
+  --ink-light:   #8a8a8a;
+  --accent:      #0a0a0a;
+  --accent-warm: #0a0a0a;
+  --accent-pale: #f0f0f0;
+  --border:      #dddddd;
   --white:       #fff;
 
-  --font-serif:  'Cormorant Garamond', Georgia, serif;
-  --font-sans:   'DM Sans', system-ui, sans-serif;
+  --font-serif:  'Fraunces', Georgia, serif;
+  --font-sans:   'Inter', system-ui, sans-serif;
 
-  --nav-h:       56px;
+  --nav-h:       64px;
   --sidebar-w:   210px;
 }
 
@@ -70,8 +70,8 @@ body::before {
 
 .nav-name {
   font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 26px;
+  font-weight: 500;
   letter-spacing: 0.01em;
   cursor: pointer;
   color: var(--ink);
@@ -134,7 +134,7 @@ body::before {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(26,23,20,0.4);
+  background: rgba(0,0,0,0.4);
   z-index: 600;
 }
 .drawer-backdrop.open { display: block; }
@@ -658,7 +658,7 @@ body::before {
 .lightbox-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(26,23,20,0.88);
+  background: rgba(0,0,0,0.9);
 }
 
 .lightbox-panel {
@@ -686,7 +686,7 @@ body::before {
 .lightbox-close:hover { color: var(--ink); }
 
 .lightbox-img-wrap {
-  background: #e8e4dc;
+  background: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -826,7 +826,7 @@ body::before {
 }
 
 @media (max-width: 480px) {
-  .nav-name { font-size: 15px; }
+  .nav-name { font-size: 20px; }
   .home-grid { grid-template-columns: 1fr; padding: 12px 12px 0; }
   .sky-grid { columns: 1; }
 }
