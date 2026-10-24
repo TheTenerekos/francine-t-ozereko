@@ -48,25 +48,14 @@
       margin-bottom: 48px;
       line-height: 1.5;
     }
-    .landing-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 4px;
+    .landing-image {
       margin-bottom: 48px;
     }
-    .landing-grid-item {
-      aspect-ratio: 1 / 1;
-      overflow: hidden;
-      background: #f5f5f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .landing-grid-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    .landing-image img {
+      max-width: 100%;
+      max-height: 60vh;
       display: block;
+      margin: 0 auto;
     }
     .landing-desc {
       max-width: 560px;
@@ -97,9 +86,6 @@
       text-transform: uppercase;
       color: #bbbbbb;
     }
-    @media (max-width: 640px) {
-      .landing-grid { grid-template-columns: repeat(2, 1fr); }
-    }
   </style>
 </head>
 <body>
@@ -108,11 +94,8 @@
     <h1 class="landing-name">Francine T. Ozereko</h1>
     <p class="landing-tagline">Ceramicist — sgraffito porcelain, birds, sky journal.</p>
 
-    <div class="landing-grid" id="landing-grid">
-      <div class="landing-grid-item"><img src="images/home/01.jpg" alt="Sgraffito ceramic work by Francine T. Ozereko" onerror="this.closest('.landing-grid-item').style.display='none'" /></div>
-      <div class="landing-grid-item"><img src="images/home/02.jpg" alt="Sgraffito ceramic work by Francine T. Ozereko" onerror="this.closest('.landing-grid-item').style.display='none'" /></div>
-      <div class="landing-grid-item"><img src="images/home/03.jpg" alt="Sgraffito ceramic work by Francine T. Ozereko" onerror="this.closest('.landing-grid-item').style.display='none'" /></div>
-      <div class="landing-grid-item"><img src="images/home/04.jpg" alt="Sgraffito ceramic work by Francine T. Ozereko" onerror="this.closest('.landing-grid-item').style.display='none'" /></div>
+    <div class="landing-image">
+      <img src="images/home/02.jpg" alt="Sgraffito ceramic work by Francine T. Ozereko" />
     </div>
 
     <p class="landing-desc">
